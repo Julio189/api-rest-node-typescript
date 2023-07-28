@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 // pegando params pela url
 router.post(
   '/cidades',
-  CidadesController.createBodyValidator,
+  CidadesController.createValidation,
   CidadesController.create,
 )
 
