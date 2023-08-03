@@ -26,4 +26,10 @@ router.get(
   CidadesController.getById,
 )
 
+router.put(
+  '/cidades/:id',
+  CidadesController.updateByIdValidation,
+  CidadesController.updateById,
+)
+
 export { router }
