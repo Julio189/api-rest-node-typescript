@@ -14,10 +14,10 @@ router.post(
   CidadesController.create,
 )
 
-// testando a query na url usando o ?
-router.post('/test', (req, res) => {
-  console.log(req.query.test)
-  return res.json(req.body)
-})
+router.get(
+  '/cidades',
+  CidadesController.getAllValidation,
+  CidadesController.getAll,
+)
 
 export { router }
