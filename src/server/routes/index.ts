@@ -32,4 +32,10 @@ router.put(
   CidadesController.updateById,
 )
 
+router.delete(
+  '/cidades/:id',
+  CidadesController.deleteByIdValidation,
+  CidadesController.deleteById,
+)
+
 export { router }
