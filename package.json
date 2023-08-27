@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest",
     "postinstall": "tsc",
-    "production": "node ./build/index.js",
-    "start": "ts-node-dev ./src/index.ts"
+    "start": "node ./build/index.js",
+    "dev": "ts-node-dev ./src/index.ts"
   },
   "author": "Julio",
   "license": "ISC",
